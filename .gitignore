@@ -1,0 +1,36 @@
+# Arduino build files
+*.bin
+*.elf
+*.hex
+*.eep
+*.map
+*.srec
+*.fuse
+*.d
+*.o
+
+# Arduino CLI output directory
+build/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Logs and temporary files
+*.log
+
+# VS Code files (if using VS Code with Arduino extension)
+.vscode/
+
+# PlatformIO (if used)
+.piolibdeps/
+.pioenvs/
+*.ini.save
+platformio.ini
+
+# CLion (JetBrains) files (if using CLion for development)
+.idea/
+cmake-build-debug/
+cmake-build-release/
