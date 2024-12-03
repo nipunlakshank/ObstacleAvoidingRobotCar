@@ -3,15 +3,21 @@ Ultrasonic us = Ultrasonic(6, 7);
 
 unsigned long start_time;
 unsigned long s = 0;
-const unsigned long min_d = 20;
-unsigned long d;
-unsigned int dir;
-const unsigned int fl = 4;
-const unsigned int fr = 5;
-const unsigned int b = 3;
+const unsigned long min_d = 20; // minimum distance to obstacle in cm
+unsigned long d;    // distance to obstacle in cm
+unsigned int dir;   // 0 - stop, 1 - forward, 2 - backward
+
+// LEDs
+const unsigned int fl = 4;  // front left LED
+const unsigned int fr = 5;  // front right LED
+const unsigned int b = 3;   // back LED
+
+// motor 1
 const unsigned int in1 = 8;
 const unsigned int in2 = 9;
 const unsigned int enA = 10;
+
+// motor 2
 const unsigned int in3 = 12;
 const unsigned int in4 = 13;
 const unsigned int enB = 11;
